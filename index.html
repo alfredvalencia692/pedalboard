@@ -63,9 +63,27 @@ button:active{background:var(--ln)}
 .acts{align-items:center}.acts button:not(.foot){min-width:52px;min-height:48px;background:rgba(0,0,0,.35);border-color:rgba(0,0,0,.5);color:#fff}
 .foot{width:88px;height:88px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,#9a9a9a 55%,#4a4a4a);border:3px solid #222;color:#111;box-shadow:0 6px 10px rgba(0,0,0,.6);font-size:13px}
 .foot.off{background:radial-gradient(circle at 35% 30%,#bbb,#666 55%,#333);color:#222}
+#bl{width:12px;height:12px;border-radius:50%;background:var(--ac);box-shadow:0 0 8px var(--ac);animation:bp .5s linear infinite}@keyframes bp{0%{opacity:1}100%{opacity:.12}}
+.tile{background:var(--g,none) 50% 58%/40px no-repeat,var(--t,linear-gradient(transparent,transparent)),linear-gradient(rgba(255,255,255,.16),rgba(0,0,0,.22)),var(--c)}.tile.add{background:none}
+#ed::after{content:"";position:absolute;inset:0;border-radius:inherit;background:var(--t,none);pointer-events:none;opacity:.9}.knobs{background:var(--g,none) 50% 50%/150px no-repeat}
+[data-k="0"]{--g:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='white' fill-opacity='.25' d='M32 4l6 20h22L42 38l7 22-17-14-17 14 7-22L4 24h22z'/%3E%3C/svg%3E");--t:repeating-linear-gradient(90deg,rgba(255,255,255,.08) 0 2px,transparent 2px 6px)}
+[data-k="1"]{--g:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='white' fill-opacity='.28' d='M38 2L12 36h14l-4 26 28-38H36z'/%3E%3C/svg%3E");--t:repeating-linear-gradient(135deg,rgba(0,0,0,.28) 0 5px,transparent 5px 11px)}
+[data-k="2"]{--g:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none' stroke='white' stroke-opacity='.3' stroke-width='4'%3E%3Cpath d='M32 32m0 0a4 4 0 1 1 6 4a10 10 0 1 1-14-8a18 18 0 1 1 30 10'/%3E%3C/svg%3E");--t:repeating-conic-gradient(rgba(255,255,255,.1) 0 10deg,transparent 10deg 20deg)}
+[data-k="3"],[data-k="11"]{--g:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none' stroke='white' stroke-opacity='.3' stroke-width='4'%3E%3Cpath d='M6 14h52M6 26h52M6 38h52M6 50h52'/%3E%3C/svg%3E");--t:radial-gradient(rgba(0,0,0,.35) 1px,transparent 1.6px) 0 0/5px 5px}
+[data-k="4"]{--g:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none' stroke='white' stroke-opacity='.3' stroke-width='4'%3E%3Cpath d='M8 46a24 24 0 0 1 48 0M32 46l12-22'/%3E%3C/svg%3E");--t:repeating-linear-gradient(0deg,rgba(255,255,255,.07) 0 1px,transparent 1px 4px)}
+[data-k="5"]{--g:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none' stroke='white' stroke-opacity='.3' stroke-width='4'%3E%3Cpath d='M4 44h18q10-36 20 0h18'/%3E%3C/svg%3E");--t:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px) 0 0/8px 8px}
+[data-k="6"]{--g:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none' stroke='white' stroke-opacity='.3' stroke-width='4'%3E%3Cpath d='M2 32q8-26 15 0t15 0 15 0 15 0'/%3E%3C/svg%3E");--t:repeating-radial-gradient(circle at 50% 130%,rgba(255,255,255,.1) 0 4px,transparent 4px 10px)}
+[data-k="7"]{--g:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='white' fill-opacity='.28' d='M20 6l14 18h-9v14h-10V24H6zM44 58L30 40h9V26h10v14h9z'/%3E%3C/svg%3E");--t:radial-gradient(circle at 80% 20%,rgba(255,255,255,.5) 0 1.5px,transparent 2px),radial-gradient(circle at 25% 70%,rgba(255,255,255,.4) 0 1px,transparent 2px)}
+[data-k="8"],[data-k="10"]{--g:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none' stroke='white' stroke-opacity='.3' stroke-width='4'%3E%3Ccircle cx='32' cy='32' r='6'/%3E%3Ccircle cx='32' cy='32' r='16'/%3E%3Ccircle cx='32' cy='32' r='27'/%3E%3C/svg%3E");--t:radial-gradient(circle at 50% 0,rgba(255,255,255,.28),transparent 62%)}
+[data-k="9"]{--g:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='white' fill-opacity='.3' d='M32 2l8 30-8 30-8-30zM2 32l30-8 30 8-30 8z'/%3E%3C/svg%3E");--t:radial-gradient(rgba(255,255,255,.5) .6px,transparent 1.1px) 0 0/6px 6px}
+#ed[data-k="1"] h2{background:#111;color:#ff5a36;font-family:Impact,'Arial Black',sans-serif;transform:skew(-6deg)}
+#ed[data-k="2"] h2{background:linear-gradient(90deg,#ff5ca8,#ffd34d,#5ce1ff);color:#111}
+#ed[data-k="7"] h2,#ed[data-k="8"] h2{background:#0a1a2a;color:#6fe7ff;box-shadow:0 0 14px #6fe7ff77}
+#ed[data-k="6"] h2{background:#14213a;color:#ffd24d}
+#ed[data-k="3"] h2,#ed[data-k="11"] h2{background:#e9dcbc;color:#3a2410}
 </style></head>
 <body>
-<div class="top"><h1>Pedalboard</h1><button id="start" class="go">Start</button><button id="tbtn">Tuner</button><button id="demo">Demo</button><button id="mute" style="background:#7a1d22">Mute</button><button id="tap">Tap</button><input id="bpm" type="number" min="0" max="240" value="120" style="width:68px" title="BPM (0 = walang sync)"><label for="dev" style="color:var(--mu)">Input device:</label><select id="dev" style="max-width:190px"><option>Pindutin muna ang Start</option></select></div>
+<div class="top"><h1>Pedalboard</h1><button id="start" class="go">Start</button><button id="tbtn">Tuner</button><button id="demo">Demo</button><button id="mute" style="background:#7a1d22">Mute</button><button id="tap">Tap</button><input id="bpm" type="number" min="0" max="240" value="120" style="width:68px" title="BPM (0 = walang sync)"><i id="bl"></i><small id="bpn" style="color:var(--mu);flex-basis:100%"></small><label for="dev" style="color:var(--mu)">Input device:</label><select id="dev" style="max-width:190px"><option>Pindutin muna ang Start</option></select></div>
 <div class="io">
 <span>In</span><input id="ig" type="range" min="0" max="3" step=".01" value="1"><span id="igv">1.0x</span>
 <div class="bar"><i id="mi"></i></div>
@@ -248,9 +266,9 @@ function mk(type,p,on=true){const sp=SPEC[type],b={id:++uid,type,on,p:{}};sp.P.f
  b.fx=sp.mk();sp.P.forEach(([k])=>b.fx.set(k,b.p[k]));return b}
 function load(list){board.forEach(b=>b.fx.dispose&&b.fx.dispose());board=list.filter(x=>SPEC[x[0]]).map(x=>mk(x[0],x[1],x[2]!==false));sel=0;wire();draw()}
 
-function persist(){try{localStorage.setItem('gfxb',JSON.stringify(board.map(b=>[b.type,{...b.p},b.on])))}catch(e){}}
+function persist(){try{bpmInfo()}catch(e){}try{localStorage.setItem('gfxb',JSON.stringify(board.map(b=>[b.type,{...b.p},b.on])))}catch(e){}}
 function draw(){persist();const bd=$('#board');bd.innerHTML='';
- board.forEach((b,ix)=>{const t=document.createElement('button');t.className='tile'+(ix==sel?' sel':'')+(b.on?'':' off');t.style.setProperty('--c',SPEC[b.type].c);
+ board.forEach((b,ix)=>{const t=document.createElement('button');t.className='tile'+(ix==sel?' sel':'')+(b.on?'':' off');t.style.setProperty('--c',SPEC[b.type].c);t.dataset.k=catIx(b.type);
   {const q=SPEC[b.type].P.find(p=>p[3]),mm=(b.type=='am'||b.type=='cb')&&q;t.innerHTML='<span class="led"></span>';const s=document.createElement('span');s.textContent=mm?q[3][b.p[q[0]]]:SPEC[b.type].n;if(mm){const m=document.createElement('small');m.textContent=SPEC[b.type].n;m.style.cssText='display:block;font-weight:400;opacity:.8';s.appendChild(m)}t.appendChild(s)}t.onclick=()=>{const n=Date.now();if(sel==ix&&n-(window.lt||0)<350){b.on=!b.on;wire()}window.lt=n;sel=ix;draw()};bd.appendChild(t)});
  const a=document.createElement('button');a.className='tile add';a.textContent='+ Add';a.onclick=()=>$('#picker').classList.toggle('show');bd.appendChild(a);
  edit()}
@@ -263,7 +281,7 @@ function knob(b,[k,l],par){const el=document.createElement('div');el.className='
 
 function edit(){const ed=$('#ed'),b=board[sel];if(!b){ed.style.removeProperty('--c');ed.innerHTML='<div class="empty">Walang pedal. I-tap ang + Add.</div>';return}
  const sp=SPEC[b.type];ed.style.setProperty('--c',sp.c);ed.innerHTML=`<h2>${sp.n}</h2><div class="knobs"></div><div class="acts"></div>`;{const q=sp.P.find(p=>p[3]);if((b.type=='am'||b.type=='cb')&&q)ed.querySelector('h2').textContent=sp.n+': '+q[3][b.p[q[0]]]+(q[4]?' ('+q[4][b.p[q[0]]]+')':'')}
- ed.classList.toggle('offp',!b.on);const kb=ed.querySelector('.knobs');if(b.type=='ir'){const f=document.createElement('input');f.type='file';f.accept='audio/*';f.style.flexBasis='100%';f.onchange=async()=>{try{await b.fx.load(await f.files[0].arrayBuffer());$('#msg').textContent='IR loaded: '+f.files[0].name+' (kailangang i-load ulit pagbukas ng app)'}catch(e){$('#msg').textContent='Hindi ma-load ang IR file.'}};kb.appendChild(f)}
+ ed.dataset.k=catIx(b.type);ed.classList.toggle('offp',!b.on);const kb=ed.querySelector('.knobs');if(b.type=='ir'){const f=document.createElement('input');f.type='file';f.accept='audio/*';f.style.flexBasis='100%';f.onchange=async()=>{try{await b.fx.load(await f.files[0].arrayBuffer());$('#msg').textContent='IR loaded: '+f.files[0].name+' (kailangang i-load ulit pagbukas ng app)'}catch(e){$('#msg').textContent='Hindi ma-load ang IR file.'}};kb.appendChild(f)}
  sp.P.forEach(P=>{if(P[3]){const w=document.createElement('div');w.className='sel-opts';w.style.flexBasis='100%';let lastG=null;const ord=[...P[3].keys()];if(P[4])ord.sort((a,b)=>P[4][a].localeCompare(P[4][b])||a-b);
    ord.forEach(ix=>{const o=P[3][ix];if(P[4]&&P[4][ix]!=lastG){lastG=P[4][ix];const h=document.createElement('div');h.className='gh';h.textContent=lastG;w.appendChild(h)}const x=document.createElement('button');x.textContent=o;x.className=b.p[P[0]]==ix?'on':'';x.onclick=()=>{b.p[P[0]]=ix;b.fx.set(P[0],ix);persist();edit()};w.appendChild(x)});kb.appendChild(w)}
   else kb.appendChild(knob(b,P))});
@@ -386,6 +404,14 @@ const midiMsg=e=>{const[s,d1,d2]=e.data,t=s&240;if(!(t==192||((t==144||t==176)&&
 const bind=()=>{const n=[];MA.inputs.forEach(i=>{i.onmidimessage=midiMsg;n.push(i.name)});$('#msg').textContent=n.length?'MIDI: '+n.join(', ')+'. Pindutin ang Learn para i-map ang A-D.':'Walang MIDI device. Ipares o isaksak ang footswitch, tapos pindutin ulit ang MIDI.'};
 $('#mdb').onclick=async()=>{try{MA=await navigator.requestMIDIAccess();MA.onstatechange=bind;bind();$('#mdb').textContent='MIDI \u2714'}catch(e){$('#mdb').textContent='MIDI \u2717';$('#msg').textContent='Hindi suportado o hindi pinayagan ang MIDI sa browser na ito (walang Web MIDI sa Safari/iPhone).'}};
 lb.onclick=()=>{if(!MA){$('#msg').textContent='Pindutin muna ang MIDI.';return}learn=0;$('#msg').textContent='Learn: pindutin ang footswitch para sa A.'};
+let ds2=null;$('#demo').onclick=async()=>{await ctx.resume();if(dsrc){dsrc.stop();dsrc=null}if(ds2){ds2.stop();ds2=null;$('#demo').textContent='Demo';return}
+ const sr=ctx.sampleRate,L=Math.floor(sr*4.8),b=ctx.createBuffer(1,L,sr),o=b.getChannelData(0);
+ [[82.41,0,1.1],[82.41,.6,.25],[82.41,.9,.25],[98,1.2,.55],[110,1.8,.55],[82.41,2.4,1.3],[82.41,3.6,.25],[82.41,3.9,.25],[73.42,4.2,.5]].forEach(([f,t,len])=>{[1,1.4983,2].forEach((r,k)=>{const d=pluck(f*r,len),s=Math.floor((t+k*.012)*sr);let y=0;for(let i=0;i<d.length;i++){y+=(d[i]-y)*.45;const e=Math.exp(-i/sr*(len<.4?16:3))*Math.min(1,(d.length-i)/(sr*.03));if(s+i<L)o[s+i]+=y*e*.12}})});
+ ds2=ctx.createBufferSource();ds2.buffer=b;ds2.loop=true;ds2.connect(inG);ds2.start();$('#demo').textContent='Stop demo';$('#msg').textContent='Demo: riff ng power chords (synthesized). Hindi ito eksaktong tunog ng totoong gitara, pero mas malapit sa pang-test ng distortion.'};
+function catIx(t){const i=CAT.findIndex(c=>c[1].includes(t));return i<0?12:i}
+function bpmInfo(){const n=board.filter(b=>b.p.div>0).length,l=$('#bl');l.style.setProperty('--bd',(60/(BPM||60))+'s');l.style.animationName=BPM>0?'':'none';
+ $('#bpn').textContent=BPM>0?'BPM '+BPM+': ginagamit lang ng Drums at ng pedal na may Note/Sync (ngayon: '+n+' pedal). Hindi ito tunog at walang kinalaman sa Mute.':'BPM 0: patay ang sync at drums.'}
+$('#bpm').addEventListener('change',bpmInfo);$('#tap').addEventListener('click',()=>setTimeout(bpmInfo));bpmInfo();
 let last=null;try{last=JSON.parse(localStorage.getItem('gfxb')||'null')}catch(e){}
 presets();load(last&&last.length?last:PRE[0].c);
 </script></body></html>
